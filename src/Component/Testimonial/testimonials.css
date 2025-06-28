@@ -1,0 +1,38 @@
+/* Centering the Slick Carousel Dots at the Bottom */
+.slick-dots {
+    bottom: 0; /* Position the dots at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center dots horizontally */
+    display: flex !important; /* Ensure it's displayed */
+    justify-content: center; /* Center the dots */
+    width: 100%; /* Make sure the dots are stretched across the container */
+  }
+  
+  /* Hide the non-active slides */
+  .slick-slide {
+    display: none;
+  }
+  
+  .slick-center .slick-slide {
+    display: block; /* Only show the center slide */
+  }
+  
+  /* Optional: Styling the individual slick dots */
+  .slick-dots li button:before {
+    color: #000000; /* Change the dot color */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    color: #000000; /* Set the color for arrows */
+    z-index: 1; /* Bring the arrows above other content */
+  }
+  
+  .slick-prev {
+    left: 15px; /* Adjust left arrow position */
+  }
+  
+  .slick-next {
+    right: 15px; /* Adjust right arrow position */
+  }
+  
