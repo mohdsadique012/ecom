@@ -12,9 +12,7 @@ function HeroSectionDetail() {
     const [image, setImage] = React.useState(product.img);
     const [selectedSize, setSelectedSize] = React.useState('41');  // Default size is 41
 
-    const handleSizeClick = (size) => {
-        setSelectedSize(size);
-    }
+   
 
     return (
         <div className="flex flex-col md:flex-row gap-8 p-6">
@@ -93,30 +91,13 @@ function HeroSectionDetail() {
                 {/* Price */}
                 <div className="text-2xl font-bold text-black mb-4">{product.price}</div>
 
-                {/* Size Options */}
-                {/* <div className="mb-4">
-                    <h4 className="text-sm font-semibold mb-2">Size - EU Men</h4>
-                    <div className="grid grid-cols-4 gap-2">
-                        {['40.5', '41', '42', '43', '43.5', '44', '44.5', '45', '46'].map((size) => (
-                            <button
-                                key={size}
-                                className={`border rounded-lg px-4 py-2 text-sm ${selectedSize === size ? 'bg-black text-white' : 'hover:bg-gray-100'}`}
-                                onClick={() => handleSizeClick(size)}
-                            >
-                                {size}
-                            </button>
-                        ))}
-                    </div>
-                    <a href="#" className="text-blue-500 text-sm mt-2 inline-block hover:underline">
-                        Size guide
-                    </a>
-                </div> */}
+          
 
                 {/* Add to Cart Button */}
                 <div className="flex items-center gap-4">
-                    <a href={`${url.pathname}/checkout`} className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
+                    <div className="bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">
                         Buy Now
-                    </a>
+                    </div>
                     <button className="border rounded-lg text-xl px-6 py-3 hover:bg-gray-100">
                         <IoHeart />
                     </button>

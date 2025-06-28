@@ -61,12 +61,12 @@ function Footer() {
 
         {/* Footer Links */}
         <div className="text-sm text-white mb-4">
-          About us | Skymates Team | Careers | Contact Us | Testimonials | Terms & Conditions | Disclaimer | Terms Of Use | Privacy Policy | FAQ | Retails Store | Franchise | Blog | Affiliate Program | Bag | Astrology | News | Room | Download App
+          About us | ecommerce Team | Careers | Contact Us | Testimonials | Terms & Conditions | Disclaimer | Terms Of Use | Privacy Policy | FAQ | Retails Store | Franchise | Blog | Affiliate Program | Bag | Astrology | News | Room | Download App
         </div>
 
         {/* Footer Bottom */}
         <div className="text-sm text-white">
-          &copy; 2020 www.hallstein.com. All rights reserved.
+          &copy; 2020 www.ecommerce.com. All rights reserved.
         </div>
       </div>
     </footer>
